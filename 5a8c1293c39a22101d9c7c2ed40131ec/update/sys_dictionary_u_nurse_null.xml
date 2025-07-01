@@ -52,12 +52,11 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-28 08:00:46</sys_created_on>
-        <sys_id>5b7b6a1bc3da22101d9c7c2ed40131f0</sys_id>
         <sys_name>u_nurse</sys_name>
         <sys_package display_value="Health Management" source="5a8c1293c39a22101d9c7c2ed40131ec">5a8c1293c39a22101d9c7c2ed40131ec</sys_package>
         <sys_policy/>
         <sys_scope display_value="Health Management">5a8c1293c39a22101d9c7c2ed40131ec</sys_scope>
-        <sys_update_name>sys_dictionary_u_nurse_null</sys_update_name>
+        <sys_update_name>sys_dictionary_u_nurse_NULL</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-06-28 08:06:15</sys_updated_on>
         <table_reference>false</table_reference>
@@ -72,4 +71,18 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_dictionary>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Health Management">5a8c1293c39a22101d9c7c2ed40131ec</claim_owner_scope>
+        <claim_timestamp>197c6adab610000001</claim_timestamp>
+        <metadata_update_name>sys_dictionary_u_nurse_NULL</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>Health Management</previous_claim_name>
+        <previous_claim_scope>5a8c1293c39a22101d9c7c2ed40131ec</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-01 15:49:19</sys_created_on>
+        <sys_id>5483b71c47626610629597da116d4344</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-01 15:49:19</sys_updated_on>
+    </sys_claim>
 </record_update>

@@ -1,80 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_choice action="INSERT_OR_UPDATE" field="u_status" table="u_ward_table" version="3">
+    <sys_choice action="INSERT_OR_UPDATE" field="u_specialization" table="u_doctor" version="3">
         <sys_choice_set action="INSERT_OR_UPDATE">
-            <element>u_status</element>
-            <name>u_ward_table</name>
+            <element>u_specialization</element>
+            <name>u_doctor</name>
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-28 10:34:59</sys_created_on>
-            <sys_id>eececfd3c39e22101d9c7c2ed4013159</sys_id>
+            <sys_created_on>2025-06-28 07:57:56</sys_created_on>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name>u_status</sys_name>
+            <sys_name>u_specialization</sys_name>
             <sys_package display_value="Health Management" source="5a8c1293c39a22101d9c7c2ed40131ec">5a8c1293c39a22101d9c7c2ed40131ec</sys_package>
             <sys_policy/>
             <sys_scope display_value="Health Management">5a8c1293c39a22101d9c7c2ed40131ec</sys_scope>
-            <sys_update_name>sys_choice_u_ward_table_u_status</sys_update_name>
+            <sys_update_name>sys_choice_u_doctor_u_specialization</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-28 10:34:59</sys_updated_on>
+            <sys_updated_on>2025-06-28 07:57:56</sys_updated_on>
         </sys_choice_set>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>u_status</element>
+            <element>u_specialization</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Active</label>
+            <label>General Medicine</label>
             <language>en</language>
-            <name>u_ward_table</name>
+            <name>u_doctor</name>
             <sequence>0</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-28 10:34:59</sys_created_on>
+            <sys_created_on>2025-06-28 07:57:56</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>aacecfd3c39e22101d9c7c2ed4013159</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-28 10:34:59</sys_updated_on>
-            <value>active</value>
+            <sys_updated_on>2025-06-28 07:57:56</sys_updated_on>
+            <value>general_medicine</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>u_status</element>
+            <element>u_specialization</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Inactive</label>
+            <label>Cardiology</label>
             <language>en</language>
-            <name>u_ward_table</name>
+            <name>u_doctor</name>
             <sequence>1</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-28 10:34:59</sys_created_on>
+            <sys_created_on>2025-06-28 07:57:56</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>aacecfd3c39e22101d9c7c2ed401315a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-28 10:34:59</sys_updated_on>
-            <value>inactive</value>
+            <sys_updated_on>2025-06-28 07:57:56</sys_updated_on>
+            <value>cardiology</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>u_status</element>
+            <element>u_specialization</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Undermaintenance</label>
+            <label>Pediatrics</label>
             <language>en</language>
-            <name>u_ward_table</name>
+            <name>u_doctor</name>
             <sequence>2</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-28 10:34:59</sys_created_on>
+            <sys_created_on>2025-06-28 07:57:56</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>e6cecfd3c39e22101d9c7c2ed401315b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-28 10:34:59</sys_updated_on>
-            <value>undermaintenance</value>
+            <sys_updated_on>2025-06-28 07:57:56</sys_updated_on>
+            <value>pediatrics</value>
         </sys_choice>
     </sys_choice>
 </record_update>

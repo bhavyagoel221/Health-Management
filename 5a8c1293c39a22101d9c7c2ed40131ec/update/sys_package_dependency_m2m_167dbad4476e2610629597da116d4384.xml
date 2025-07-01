@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
     <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
-        <dependency display_value="Task table schema" source="com.glide.task">3d75906b5c2312104f3496f8659cf687</dependency>
+        <dependency display_value="Task table schema" source="com.glide.task">1734e77b04312210559073c06a02f70c</dependency>
         <min_version>1.0.0</min_version>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-28 07:22:36</sys_created_on>
-        <sys_id>e0c2aa5fc39a22101d9c7c2ed40131cb</sys_id>
+        <sys_id>167dbad4476e2610629597da116d4384</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_package display_value="Health Management" source="5a8c1293c39a22101d9c7c2ed40131ec">5a8c1293c39a22101d9c7c2ed40131ec</sys_package>
         <sys_updated_by>admin</sys_updated_by>

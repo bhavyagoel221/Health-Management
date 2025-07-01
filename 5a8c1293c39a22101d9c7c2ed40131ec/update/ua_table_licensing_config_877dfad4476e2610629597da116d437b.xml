@@ -4,22 +4,22 @@
         <license_condition/>
         <license_model>none</license_model>
         <license_roles/>
-        <name>u_doctor</name>
+        <name>u_patient_table</name>
         <op_delete>true</op_delete>
         <op_insert>true</op_insert>
         <op_update>true</op_update>
         <owner_condition/>
         <sys_class_name>ua_table_licensing_config</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-06-28 07:50:48</sys_created_on>
-        <sys_id>e539aa57c3da22101d9c7c2ed4013197</sys_id>
+        <sys_created_on>2025-06-28 07:08:43</sys_created_on>
+        <sys_id>877dfad4476e2610629597da116d437b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>u_doctor</sys_name>
+        <sys_name>u_patient_table</sys_name>
         <sys_package display_value="Health Management" source="5a8c1293c39a22101d9c7c2ed40131ec">5a8c1293c39a22101d9c7c2ed40131ec</sys_package>
         <sys_policy/>
         <sys_scope display_value="Health Management">5a8c1293c39a22101d9c7c2ed40131ec</sys_scope>
-        <sys_update_name>ua_table_licensing_config_e539aa57c3da22101d9c7c2ed4013197</sys_update_name>
+        <sys_update_name>ua_table_licensing_config_877dfad4476e2610629597da116d437b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-28 07:50:48</sys_updated_on>
+        <sys_updated_on>2025-06-28 07:08:43</sys_updated_on>
     </ua_table_licensing_config>
 </record_update>

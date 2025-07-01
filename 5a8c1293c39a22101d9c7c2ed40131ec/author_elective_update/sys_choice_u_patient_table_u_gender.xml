@@ -6,7 +6,6 @@
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2025-06-28 07:17:38</sys_created_on>
-            <sys_id>a391a21fc39a22101d9c7c2ed40131dd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>u_gender</sys_name>
             <sys_package display_value="Health Management" source="5a8c1293c39a22101d9c7c2ed40131ec">5a8c1293c39a22101d9c7c2ed40131ec</sys_package>
@@ -30,7 +29,6 @@
             <sys_created_on>2025-06-28 07:17:38</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>6f91a21fc39a22101d9c7c2ed40131dc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2025-06-28 07:17:38</sys_updated_on>
@@ -50,7 +48,6 @@
             <sys_created_on>2025-06-28 07:17:38</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>6b91a21fc39a22101d9c7c2ed40131de</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2025-06-28 07:17:38</sys_updated_on>
@@ -70,7 +67,6 @@
             <sys_created_on>2025-06-28 07:17:38</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>a791a21fc39a22101d9c7c2ed40131df</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2025-06-28 07:17:38</sys_updated_on>

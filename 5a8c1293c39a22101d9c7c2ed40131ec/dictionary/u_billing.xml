@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="4b00ba9fc3da22101d9c7c2ed401313c" extends="task" label="Billing" max_length="40" name="u_billing" type="collection">
+        <element attributes="edge_encryption_enabled=true,omit_sys_original=true" label="Total Amount" mandatory="true" max_length="20" name="u_total_amount" type="currency"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Appointment ID" mandatory="true" max_length="32" name="u_appointment_id" reference="u_appointment" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="u_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Paid" sequence="1" value="paid"/>
+                <element inactive_on_update="false" label="Overdue" sequence="2" value="overdue"/>
+                <element inactive_on_update="false" label="Pending" sequence="0" value="pending"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Patient ID" mandatory="true" max_length="32" name="u_patient_id" reference="u_patient_table" type="reference"/>
+    </element>
+</database>

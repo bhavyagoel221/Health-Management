@@ -3,7 +3,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>u_number</element>
-            <list_id display_value="u_patient_table" element="NULL" name="u_patient_table" parent="NULL" relationship="NULL" sys_domain="global" view="3f7490635c2312104f3496f8659cf63f">0f189713c3de22101d9c7c2ed4013167</list_id>
+            <list_id display_value="u_patient_table" element="NULL" name="u_patient_table" parent="NULL" relationship="NULL" sys_domain="global" view="5343a37304312210559073c06a02f769">0f189713c3de22101d9c7c2ed4013167</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
@@ -40,7 +40,7 @@
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2025-06-28 11:15:42</sys_updated_on>
             <sys_user/>
-            <view display_value="Reference List" name="sys_ref_list">3f7490635c2312104f3496f8659cf63f</view>
+            <view display_value="Reference List" name="sys_ref_list">5343a37304312210559073c06a02f769</view>
             <view_name/>
         </sys_ui_list>
     </sys_ui_list>
