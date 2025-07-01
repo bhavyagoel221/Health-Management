@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Professional Information" section_id="26bc629bc3da22101d9c7c2ed40131cb" sys_domain="global" table="u_nurse" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_department</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-28 10:33:19</sys_created_on>
+            <sys_id>8a6ec7d3c39e22101d9c7c2ed4013175</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Professional Information" display_value="Professional Information" name="u_nurse" sys_domain="global" view="Default view">26bc629bc3da22101d9c7c2ed40131cb</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-28 10:33:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-28 10:33:19</sys_created_on>
+            <sys_id>026ec7d3c39e22101d9c7c2ed4013176</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Professional Information" display_value="Professional Information" name="u_nurse" sys_domain="global" view="Default view">26bc629bc3da22101d9c7c2ed40131cb</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-28 10:33:19</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_status</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-28 10:33:19</sys_created_on>
+            <sys_id>866ec7d3c39e22101d9c7c2ed4013176</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Professional Information" display_value="Professional Information" name="u_nurse" sys_domain="global" view="Default view">26bc629bc3da22101d9c7c2ed40131cb</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-28 10:33:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Professional Information</caption>
+            <header>false</header>
+            <name>u_nurse</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-28 08:06:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>26bc629bc3da22101d9c7c2ed40131cb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_nurse</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Health Management" source="5a8c1293c39a22101d9c7c2ed40131ec">5a8c1293c39a22101d9c7c2ed40131ec</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Health Management">5a8c1293c39a22101d9c7c2ed40131ec</sys_scope>
+            <sys_update_name>sys_ui_section_26bc629bc3da22101d9c7c2ed40131cb</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-28 08:06:10</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
