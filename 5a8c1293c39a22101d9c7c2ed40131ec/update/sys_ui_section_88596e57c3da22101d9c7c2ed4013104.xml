@@ -4,13 +4,13 @@
             <element>u_number</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-28 10:22:47</sys_created_on>
-            <sys_id>37fb8713c39e22101d9c7c2ed4013164</sys_id>
+            <sys_created_on>2025-06-28 07:57:56</sys_created_on>
+            <sys_id>4ada6ad7c3da22101d9c7c2ed40131fd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Personal Information" display_value="Personal Information" name="u_doctor" sys_domain="global" view="Default view">88596e57c3da22101d9c7c2ed4013104</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-28 10:22:47</sys_updated_on>
+            <sys_updated_on>2025-06-28 07:57:56</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,69 +18,55 @@
             <element>u_fname</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-28 10:22:47</sys_created_on>
-            <sys_id>bbfb8713c39e22101d9c7c2ed4013164</sys_id>
+            <sys_created_on>2025-06-28 07:57:56</sys_created_on>
+            <sys_id>ceda6ad7c3da22101d9c7c2ed40131fd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Personal Information" display_value="Personal Information" name="u_doctor" sys_domain="global" view="Default view">88596e57c3da22101d9c7c2ed4013104</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-28 10:22:47</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_status</element>
-            <position>2</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-28 10:22:47</sys_created_on>
-            <sys_id>33fb8713c39e22101d9c7c2ed4013165</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Personal Information" display_value="Personal Information" name="u_doctor" sys_domain="global" view="Default view">88596e57c3da22101d9c7c2ed4013104</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-28 10:22:47</sys_updated_on>
+            <sys_updated_on>2025-06-28 07:57:56</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>3</position>
+            <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-28 10:22:47</sys_created_on>
-            <sys_id>b7fb8713c39e22101d9c7c2ed4013165</sys_id>
+            <sys_created_on>2025-06-28 07:57:56</sys_created_on>
+            <sys_id>46da6ad7c3da22101d9c7c2ed40131fe</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Personal Information" display_value="Personal Information" name="u_doctor" sys_domain="global" view="Default view">88596e57c3da22101d9c7c2ed4013104</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-28 10:22:47</sys_updated_on>
+            <sys_updated_on>2025-06-28 07:57:56</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_specialization</element>
-            <position>4</position>
+            <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-28 10:22:47</sys_created_on>
-            <sys_id>3ffb8713c39e22101d9c7c2ed4013165</sys_id>
+            <sys_created_on>2025-06-28 07:57:56</sys_created_on>
+            <sys_id>cada6ad7c3da22101d9c7c2ed40131fe</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Personal Information" display_value="Personal Information" name="u_doctor" sys_domain="global" view="Default view">88596e57c3da22101d9c7c2ed4013104</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-28 10:22:47</sys_updated_on>
+            <sys_updated_on>2025-06-28 07:57:56</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_lname</element>
-            <position>5</position>
+            <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-28 10:22:47</sys_created_on>
-            <sys_id>b3fb8713c39e22101d9c7c2ed4013166</sys_id>
+            <sys_created_on>2025-06-28 07:57:56</sys_created_on>
+            <sys_id>42da6ad7c3da22101d9c7c2ed40131ff</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Personal Information" display_value="Personal Information" name="u_doctor" sys_domain="global" view="Default view">88596e57c3da22101d9c7c2ed4013104</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-28 10:22:47</sys_updated_on>
+            <sys_updated_on>2025-06-28 07:57:56</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
