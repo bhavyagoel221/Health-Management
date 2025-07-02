@@ -11,7 +11,7 @@
             <choice>
                 <element inactive_on_update="false" label="New" sequence="0" value="new"/>
                 <element inactive_on_update="false" label="Available" sequence="1" value="available"/>
-                <element inactive_on_update="false" label="Under Maintenance" sequence="3" value="under maintenance"/>
+                <element inactive_on_update="false" label="Under Maintenance" sequence="3" value="under_maintenance"/>
                 <element inactive_on_update="false" label="Occupied" sequence="2" value="occupied"/>
             </choice>
         </element>

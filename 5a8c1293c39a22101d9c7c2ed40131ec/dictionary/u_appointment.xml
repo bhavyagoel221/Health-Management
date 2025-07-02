@@ -8,6 +8,7 @@
                 <element inactive_on_update="false" label="Scheduled" sequence="1" value="scheduled"/>
                 <element inactive_on_update="false" label="Confirmed" sequence="2" value="confirmed"/>
                 <element inactive_on_update="false" label="Cancelled" sequence="4" value="cancelled"/>
+                <element inactive_on_update="false" label="Overdue" sequence="5" value="overdue"/>
                 <element inactive_on_update="false" label="New" sequence="0" value="new"/>
             </choice>
         </element>

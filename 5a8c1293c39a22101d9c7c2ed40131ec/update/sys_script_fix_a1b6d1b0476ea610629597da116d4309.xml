@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <before>false</before>
+        <description>A script to fetch all medications prescribed to a patient.</description>
+        <name>q3_medication</name>
+        <record_for_rollback>true</record_for_rollback>
+        <script><![CDATA[var grMed = new GlideRecord('u_medication');
+grMed.addQuery('u_patient_id','0ec304b847a6a610629597da116d4372');
+grMed.query();
+while (grMed.next()){
+	gs.print(grMed.u_medication_name);
+}]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-02 17:41:37</sys_created_on>
+        <sys_id>a1b6d1b0476ea610629597da116d4309</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>q3_medication</sys_name>
+        <sys_package display_value="Health Management" source="5a8c1293c39a22101d9c7c2ed40131ec">5a8c1293c39a22101d9c7c2ed40131ec</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Health Management">5a8c1293c39a22101d9c7c2ed40131ec</sys_scope>
+        <sys_update_name>sys_script_fix_a1b6d1b0476ea610629597da116d4309</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-02 18:12:24</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>a1b6d1b0476ea610629597da116d4309</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-02 17:41:36</sys_created_on>
+        <sys_id>76c65d34476ea610629597da116d43cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-02 17:41:36</sys_updated_on>
+        <table>sys_script_fix</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

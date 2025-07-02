@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <before>false</before>
+        <description>A script to fetch all appointments for a specific patient.</description>
+        <name>q1_fetch_appointments</name>
+        <record_for_rollback>true</record_for_rollback>
+        <script><![CDATA[// var patientId = '9f0d843847e6a610629597da116d433c';
+
+var grApp = new GlideRecord('u_appointment');
+grApp.addQuery('u_patient_id','0ec304b847a6a610629597da116d4372');
+grApp.query();
+
+while (grApp.next()) {
+    var date = grApp.u_appointment_date.getDisplayValue();
+    var doctor = grApp.u_doctor.getDisplayValue();
+    var department = grApp.u_department.toString();
+    var status = grApp.u_status.toString();
+
+    gs.print(date + ' -- ' + doctor + ' -- ' + department + ' -- ' + status);
+}
+]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-02 16:02:37</sys_created_on>
+        <sys_id>eb3e787447eaa610629597da116d4384</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>q1_fetch_appointments</sys_name>
+        <sys_package display_value="Health Management" source="5a8c1293c39a22101d9c7c2ed40131ec">5a8c1293c39a22101d9c7c2ed40131ec</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Health Management">5a8c1293c39a22101d9c7c2ed40131ec</sys_scope>
+        <sys_update_name>sys_script_fix_eb3e787447eaa610629597da116d4384</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-02 18:10:48</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>eb3e787447eaa610629597da116d4384</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-02 16:02:37</sys_created_on>
+        <sys_id>fc2089b447eaa610629597da116d43a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-02 16:02:37</sys_updated_on>
+        <table>sys_script_fix</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
