@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" db_object_id="91c6aa93c3da22101d9c7c2ed401315c" extends="task" label="Lab Test" max_length="40" name="u_lab_test" type="collection">
-        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" mandatory="true" max_length="40" name="u_status" type="string">
+    <element attributes="no_attachment=true" audit="true" db_object_id="91c6aa93c3da22101d9c7c2ed401315c" extends="task" label="Lab Test" max_length="40" name="u_lab_test" type="collection">
+        <element attributes="default=Scheduled,edge_encryption_enabled=true" choice="1" default="Scheduled" label="Status" mandatory="true" max_length="40" name="u_status" type="string">
             <choice>
-                <element inactive_on_update="false" label="Scheduled" sequence="0" value="scheduled"/>
-                <element inactive_on_update="false" label="Completed" sequence="1" value="completed"/>
-                <element inactive_on_update="false" label="Cancelled" sequence="2" value="cancelled"/>
+                <element inactive_on_update="false" label="Scheduled" sequence="1" value="scheduled"/>
+                <element inactive_on_update="false" label="Completed" sequence="3" value="completed"/>
+                <element inactive_on_update="false" label="In Progress" sequence="2" value="in progress"/>
+                <element inactive_on_update="false" label="New" sequence="0" value="new"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="4" value="cancelled"/>
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Patient ID" mandatory="true" max_length="32" name="u_patient_id" reference="u_patient_table" type="reference"/>
+        <element attributes="encode_utf8=false" label="Assigned Technician" max_length="32" name="u_assigned_technician" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Scheduled Date" mandatory="true" max_length="40" name="u_scheduled_date" type="glide_date_time"/>
         <element attributes="edge_encryption_enabled=true" label="Results" mandatory="true" max_length="1000" name="u_results" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Test Type" mandatory="true" max_length="40" name="u_test_type" type="string">

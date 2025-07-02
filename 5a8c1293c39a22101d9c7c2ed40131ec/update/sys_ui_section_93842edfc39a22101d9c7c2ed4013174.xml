@@ -4,13 +4,13 @@
             <element>u_doctor</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-28 07:30:32</sys_created_on>
-            <sys_id>e494aedfc39a22101d9c7c2ed4013129</sys_id>
+            <sys_created_on>2025-07-01 16:07:35</sys_created_on>
+            <sys_id>7ba7339047a26610629597da116d43d4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Doctor Information" display_value="Doctor Information" name="u_appointment" sys_domain="global" view="Default view">93842edfc39a22101d9c7c2ed4013174</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-28 07:30:32</sys_updated_on>
+            <sys_updated_on>2025-07-01 16:07:35</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,29 +18,15 @@
             <element>.split</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-28 07:30:32</sys_created_on>
-            <sys_id>6c94aedfc39a22101d9c7c2ed4013129</sys_id>
+            <sys_created_on>2025-07-01 16:07:35</sys_created_on>
+            <sys_id>ffa7339047a26610629597da116d43d4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Doctor Information" display_value="Doctor Information" name="u_appointment" sys_domain="global" view="Default view">93842edfc39a22101d9c7c2ed4013174</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-28 07:30:32</sys_updated_on>
+            <sys_updated_on>2025-07-01 16:07:35</sys_updated_on>
             <sys_user/>
             <type>.split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_status</element>
-            <position>2</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-28 07:30:32</sys_created_on>
-            <sys_id>e094aedfc39a22101d9c7c2ed401312a</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Doctor Information" display_value="Doctor Information" name="u_appointment" sys_domain="global" view="Default view">93842edfc39a22101d9c7c2ed4013174</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-28 07:30:32</sys_updated_on>
-            <sys_user/>
-            <type/>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption>Doctor Information</caption>

@@ -8,7 +8,7 @@
         <choice>1</choice>
         <choice_field/>
         <choice_table/>
-        <column_label>Status</column_label>
+        <column_label>Status of Appointment</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -47,13 +47,13 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-28 07:30:29</sys_created_on>
-        <sys_name>Status</sys_name>
+        <sys_name>Status of Appointment</sys_name>
         <sys_package display_value="Health Management" source="5a8c1293c39a22101d9c7c2ed40131ec">5a8c1293c39a22101d9c7c2ed40131ec</sys_package>
         <sys_policy/>
         <sys_scope display_value="Health Management">5a8c1293c39a22101d9c7c2ed40131ec</sys_scope>
         <sys_update_name>sys_dictionary_u_appointment_u_status</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-28 07:30:32</sys_updated_on>
+        <sys_updated_on>2025-07-01 16:07:34</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

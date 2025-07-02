@@ -4,13 +4,13 @@
             <element>u_department</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-28 08:06:15</sys_created_on>
-            <sys_id>fbbca29bc3da22101d9c7c2ed40131b8</sys_id>
+            <sys_created_on>2025-07-01 16:13:03</sys_created_on>
+            <sys_id>f7e87bd047a26610629597da116d43a4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Professional Information" display_value="Professional Information" name="u_nurse" sys_domain="global" view="Default view">26bc629bc3da22101d9c7c2ed40131cb</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-28 08:06:15</sys_updated_on>
+            <sys_updated_on>2025-07-01 16:13:03</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,15 +18,29 @@
             <element>.split</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-28 08:06:15</sys_created_on>
-            <sys_id>73bca29bc3da22101d9c7c2ed40131b9</sys_id>
+            <sys_created_on>2025-07-01 16:13:03</sys_created_on>
+            <sys_id>7fe87bd047a26610629597da116d43a4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Professional Information" display_value="Professional Information" name="u_nurse" sys_domain="global" view="Default view">26bc629bc3da22101d9c7c2ed40131cb</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-28 08:06:15</sys_updated_on>
+            <sys_updated_on>2025-07-01 16:13:03</sys_updated_on>
             <sys_user/>
             <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_status</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-01 16:13:03</sys_created_on>
+            <sys_id>f3e87bd047a26610629597da116d43a5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Professional Information" display_value="Professional Information" name="u_nurse" sys_domain="global" view="Default view">26bc629bc3da22101d9c7c2ed40131cb</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-01 16:13:03</sys_updated_on>
+            <sys_user/>
+            <type/>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption>Professional Information</caption>

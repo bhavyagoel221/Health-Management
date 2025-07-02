@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" db_object_id="0f61b613c31e22101d9c7c2ed4013104" extends="task" label="Insurance" max_length="40" name="u_insurance" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Policy Number" mandatory="true" max_length="40" name="u_plicy_number" type="string"/>
+        <element label="Approval Required" max_length="40" name="u_approval_required" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Last Verified On" max_length="40" name="u_last_verified" type="glide_date"/>
         <element attributes="edge_encryption_enabled=true" label="Provider" mandatory="true" max_length="40" name="u_string_2" type="string"/>
         <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Patient ID" mandatory="true" max_length="32" name="u_patient_id" reference="u_patient_table" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Status" mandatory="true" max_length="40" name="u_status" type="string">
             <choice>
-                <element inactive_on_update="false" label="Active" sequence="0" value="active"/>
-                <element inactive_on_update="false" label="Inactive" sequence="1" value="inactive"/>
+                <element inactive_on_update="false" label="Active" sequence="1" value="active"/>
+                <element inactive_on_update="false" label="Expired" sequence="2" value="inactive"/>
+                <element inactive_on_update="false" label="New" sequence="0" value="new"/>
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" label="Coverage Details" mandatory="true" max_length="40" name="u_coverage_details" type="string"/>

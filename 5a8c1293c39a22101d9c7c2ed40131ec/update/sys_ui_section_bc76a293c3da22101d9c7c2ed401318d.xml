@@ -4,13 +4,13 @@
             <element>u_start_date</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-28 07:38:49</sys_created_on>
-            <sys_id>4276e293c3da22101d9c7c2ed40131d3</sys_id>
+            <sys_created_on>2025-07-02 02:33:21</sys_created_on>
+            <sys_id>9ae68260476e6610629597da116d4322</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Prescription Information" display_value="Prescription Information" name="u_medication" sys_domain="global" view="Default view">bc76a293c3da22101d9c7c2ed401318d</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-28 07:38:49</sys_updated_on>
+            <sys_updated_on>2025-07-02 02:33:21</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>u_prescribing_doctor</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-28 07:38:49</sys_created_on>
-            <sys_id>c676e293c3da22101d9c7c2ed40131d3</sys_id>
+            <sys_created_on>2025-07-02 02:33:21</sys_created_on>
+            <sys_id>56e68260476e6610629597da116d4323</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Prescription Information" display_value="Prescription Information" name="u_medication" sys_domain="global" view="Default view">bc76a293c3da22101d9c7c2ed401318d</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-28 07:38:49</sys_updated_on>
+            <sys_updated_on>2025-07-02 02:33:21</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>.split</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-28 07:38:49</sys_created_on>
-            <sys_id>4e76e293c3da22101d9c7c2ed40131d3</sys_id>
+            <sys_created_on>2025-07-02 02:33:21</sys_created_on>
+            <sys_id>dae68260476e6610629597da116d4323</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Prescription Information" display_value="Prescription Information" name="u_medication" sys_domain="global" view="Default view">bc76a293c3da22101d9c7c2ed401318d</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-28 07:38:49</sys_updated_on>
+            <sys_updated_on>2025-07-02 02:33:21</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -46,13 +46,27 @@
             <element>u_end_date</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-28 07:38:49</sys_created_on>
-            <sys_id>c276e293c3da22101d9c7c2ed40131d4</sys_id>
+            <sys_created_on>2025-07-02 02:33:21</sys_created_on>
+            <sys_id>52e68260476e6610629597da116d4324</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Prescription Information" display_value="Prescription Information" name="u_medication" sys_domain="global" view="Default view">bc76a293c3da22101d9c7c2ed401318d</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-28 07:38:49</sys_updated_on>
+            <sys_updated_on>2025-07-02 02:33:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>priority</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-02 02:33:21</sys_created_on>
+            <sys_id>d6e68260476e6610629597da116d4324</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Prescription Information" display_value="Prescription Information" name="u_medication" sys_domain="global" view="Default view">bc76a293c3da22101d9c7c2ed401318d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-02 02:33:21</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

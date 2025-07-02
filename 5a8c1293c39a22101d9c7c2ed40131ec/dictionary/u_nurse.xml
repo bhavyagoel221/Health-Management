@@ -6,8 +6,10 @@
         <element attributes="edge_encryption_enabled=true" label="Email" mandatory="true" max_length="40" name="u_email" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="u_status" type="string">
             <choice>
-                <element inactive_on_update="false" label="Active" sequence="0" value="active"/>
-                <element inactive_on_update="false" label="Inactive" sequence="1" value="inactive"/>
+                <element inactive_on_update="false" label="Retired" sequence="2" value="retired"/>
+                <element inactive_on_update="false" label="New" sequence="0" value="new"/>
+                <element inactive_on_update="false" label="Active" sequence="1" value="active"/>
+                <element inactive="true" inactive_on_update="true" label="Inactive" sequence="0" value="inactive"/>
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" label="First Name" mandatory="true" max_length="40" name="u_fname" type="string"/>

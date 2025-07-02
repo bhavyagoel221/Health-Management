@@ -4,13 +4,13 @@
             <element>u_number</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-28 08:13:56</sys_created_on>
-            <sys_id>d48e2a1fc3da22101d9c7c2ed401310e</sys_id>
+            <sys_created_on>2025-07-01 16:12:10</sys_created_on>
+            <sys_id>07b877d047a26610629597da116d43e3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Ward Details" display_value="Ward Details" name="u_ward_table" sys_domain="global" view="Default view">bc9d66dbc3da22101d9c7c2ed401310f</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-28 08:13:56</sys_updated_on>
+            <sys_updated_on>2025-07-01 16:12:10</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>u_location</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-28 08:13:56</sys_created_on>
-            <sys_id>5c8e2a1fc3da22101d9c7c2ed401310e</sys_id>
+            <sys_created_on>2025-07-01 16:12:10</sys_created_on>
+            <sys_id>8bb877d047a26610629597da116d43e3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Ward Details" display_value="Ward Details" name="u_ward_table" sys_domain="global" view="Default view">bc9d66dbc3da22101d9c7c2ed401310f</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-28 08:13:56</sys_updated_on>
+            <sys_updated_on>2025-07-01 16:12:10</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>u_occupancy</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-28 08:13:56</sys_created_on>
-            <sys_id>d08e2a1fc3da22101d9c7c2ed401310f</sys_id>
+            <sys_created_on>2025-07-01 16:12:10</sys_created_on>
+            <sys_id>03b877d047a26610629597da116d43e4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Ward Details" display_value="Ward Details" name="u_ward_table" sys_domain="global" view="Default view">bc9d66dbc3da22101d9c7c2ed401310f</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-28 08:13:56</sys_updated_on>
+            <sys_updated_on>2025-07-01 16:12:10</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>.split</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-28 08:13:56</sys_created_on>
-            <sys_id>588e2a1fc3da22101d9c7c2ed401310f</sys_id>
+            <sys_created_on>2025-07-01 16:12:10</sys_created_on>
+            <sys_id>87b877d047a26610629597da116d43e4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Ward Details" display_value="Ward Details" name="u_ward_table" sys_domain="global" view="Default view">bc9d66dbc3da22101d9c7c2ed401310f</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-28 08:13:56</sys_updated_on>
+            <sys_updated_on>2025-07-01 16:12:10</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>u_ward_name</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-28 08:13:56</sys_created_on>
-            <sys_id>dc8e2a1fc3da22101d9c7c2ed401310f</sys_id>
+            <sys_created_on>2025-07-01 16:12:10</sys_created_on>
+            <sys_id>0fb877d047a26610629597da116d43e4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Ward Details" display_value="Ward Details" name="u_ward_table" sys_domain="global" view="Default view">bc9d66dbc3da22101d9c7c2ed401310f</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-28 08:13:56</sys_updated_on>
+            <sys_updated_on>2025-07-01 16:12:10</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -74,13 +74,27 @@
             <element>u_capacity</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-28 08:13:56</sys_created_on>
-            <sys_id>548e2a1fc3da22101d9c7c2ed4013110</sys_id>
+            <sys_created_on>2025-07-01 16:12:10</sys_created_on>
+            <sys_id>83b877d047a26610629597da116d43e5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Ward Details" display_value="Ward Details" name="u_ward_table" sys_domain="global" view="Default view">bc9d66dbc3da22101d9c7c2ed401310f</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-28 08:13:56</sys_updated_on>
+            <sys_updated_on>2025-07-01 16:12:10</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_status</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-01 16:12:10</sys_created_on>
+            <sys_id>0bb877d047a26610629597da116d43e5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Ward Details" display_value="Ward Details" name="u_ward_table" sys_domain="global" view="Default view">bc9d66dbc3da22101d9c7c2ed401310f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-01 16:12:10</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
