@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_email_template">
+    <sysevent_email_template action="INSERT_OR_UPDATE">
+        <collection>u_appointment</collection>
+        <email_layout/>
+        <message/>
+        <message_html><![CDATA[<p>Hello ${u_doctor.u_fname} ${u_doctor.u_lname},</p>
+<p>A new appointment is scheduled as below:</p>
+<p>Appointment ID: ${number}</p>
+<p>Patient&nbsp; Name: ${u_patient_id.u_fname} ${u_patient_id.u_lname}</p>
+<p>Gender: ${u_patient_id.u_gender}</p>
+<p>Appointment Date: ${u_appointment_date}</p>
+<p>&nbsp;</p>
+<p>Thank You,<br>Admin</p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Appointment Scheduling</name>
+        <sms_alternate/>
+        <subject>Appointment: ${number} Scheduled</subject>
+        <sys_class_name>sysevent_email_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-09 17:14:55</sys_created_on>
+        <sys_id>8e52d94f472e6250629597da116d43f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Appointment Scheduling</sys_name>
+        <sys_package display_value="Health Management" source="5a8c1293c39a22101d9c7c2ed40131ec">5a8c1293c39a22101d9c7c2ed40131ec</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Health Management">5a8c1293c39a22101d9c7c2ed40131ec</sys_scope>
+        <sys_update_name>sysevent_email_template_8e52d94f472e6250629597da116d43f2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-09 17:14:55</sys_updated_on>
+        <sys_version>2</sys_version>
+    </sysevent_email_template>
+</record_update>

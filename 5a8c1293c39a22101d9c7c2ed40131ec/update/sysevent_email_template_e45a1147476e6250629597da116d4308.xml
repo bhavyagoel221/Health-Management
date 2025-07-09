@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_email_template">
+    <sysevent_email_template action="INSERT_OR_UPDATE">
+        <collection>u_lab_test</collection>
+        <email_layout/>
+        <message/>
+        <message_html><![CDATA[<p>Hi ${u_patient_id.u_fname},</p>
+<p>Your Lab Test Result has been updated.</p>
+<p>Test ID: ${number}</p>
+<p>Patient Name: ${u_patient_id.u_fname} ${u_patient_id.u_lname}</p>
+<p>Test Type: ${u_test_type}</p>
+<p>Results: ${u_results}<br><br>You may collect your reports from the centre.</p>
+<p>&nbsp;</p>
+<p>Thank You,</p>
+<p>Lab Test Centre</p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Lab_Test_Result</name>
+        <sms_alternate/>
+        <subject>Lab Test Results: ${u_patient_id.u_fname}</subject>
+        <sys_class_name>sysevent_email_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-09 17:49:30</sys_created_on>
+        <sys_id>e45a1147476e6250629597da116d4308</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Lab_Test_Result</sys_name>
+        <sys_package display_value="Health Management" source="5a8c1293c39a22101d9c7c2ed40131ec">5a8c1293c39a22101d9c7c2ed40131ec</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Health Management">5a8c1293c39a22101d9c7c2ed40131ec</sys_scope>
+        <sys_update_name>sysevent_email_template_e45a1147476e6250629597da116d4308</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-09 17:49:30</sys_updated_on>
+        <sys_version>2</sys_version>
+    </sysevent_email_template>
+</record_update>
