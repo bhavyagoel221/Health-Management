@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>u_room</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Q7. To update occupancy field in wad tab</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	if (current.u_assigned_to != previous.u_assigned_to){
+		var ward = new GlideRecord('u_ward_table');
+		var wardID = current.u_ward_id;
+		ward.addQuery('sys_id', wardID);
+		ward.query();
+		if(ward.next()){
+            gr.u_occupancy += 1;
+            gs.addInfoMessage('occupancy updated in ward table to '+ ward.u_occupancy);
+		}
+    }
+	
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-07 20:11:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a60723d2476eae10629597da116d4391</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>Q7. To update occupancy field in wad tab</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Health Management" source="5a8c1293c39a22101d9c7c2ed40131ec">5a8c1293c39a22101d9c7c2ed40131ec</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Health Management">5a8c1293c39a22101d9c7c2ed40131ec</sys_scope>
+        <sys_update_name>sys_script_a60723d2476eae10629597da116d4391</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 11:02:43</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=a60723d2476eae10629597da116d4391"/>
+    <sys_es_latest_script action="DELETE">
+        <id>a60723d2476eae10629597da116d4391</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-07 20:11:30</sys_created_on>
+        <sys_id>1b09abd2476eae10629597da116d43a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-07 20:11:30</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Health Management">5a8c1293c39a22101d9c7c2ed40131ec</application>
+        <file_path/>
+        <instance_id>13ddae8ceb246a10cbdefceacad0cd08</instance_id>
+        <instance_name>dev307142</instance_name>
+        <name>sys_script_a60723d2476eae10629597da116d4391</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;u_room&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Q7. To update occupancy field in wad tab&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	if (current.u_assigned_to != previous.u_assigned_to){
+		var ward = new GlideRecord('u_ward_table');
+		var wardID = current.u_ward_id;
+		ward.addQuery('sys_id', wardID);
+		ward.query();
+		if(ward.next()){
+            gr.u_occupancy += 1;
+            gs.addInfoMessage('occupancy updated in ward table to '+ ward.u_occupancy);
+		}
+    }
+	
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-07 20:11:30&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;a60723d2476eae10629597da116d4391&lt;/sys_id&gt;&lt;sys_mod_count&gt;15&lt;/sys_mod_count&gt;&lt;sys_name&gt;Q7. To update occupancy field in wad tab&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Health Management" source="5a8c1293c39a22101d9c7c2ed40131ec"&gt;5a8c1293c39a22101d9c7c2ed40131ec&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Health Management"&gt;5a8c1293c39a22101d9c7c2ed40131ec&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_a60723d2476eae10629597da116d4391&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-08 11:02:43&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=a60723d2476eae10629597da116d4391"/&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;a60723d2476eae10629597da116d4391&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-07 20:11:30&lt;/sys_created_on&gt;&lt;sys_id&gt;1b09abd2476eae10629597da116d43a1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-07 20:11:30&lt;/sys_updated_on&gt;&lt;table&gt;sys_script&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1293418953</payload_hash>
+        <record_name>Q7. To update occupancy field in wad tab</record_name>
+        <reverted_from/>
+        <source>501e999647a2ae10629597da116d43dc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 11:02:43</sys_created_on>
+        <sys_id>9605ba6e472eee10629597da116d438e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197e9b3c9020000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 11:02:43</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>5a05ba6e022eee10ee44bb3a0760958d</update_guid>
+        <update_guid_history>5a05ba6e022eee10ee44bb3a0760958d:1293418953,ede3fe6e682eee10b21378f2ec3f4158:477461854,b6833a6ea62eee1074399953431f0034:1293418953,a8a276aa122eee107d082854861f6cdc:-1286986421,1f423e2a892eee100cc49d92bab617fc:2089273884,92d17e2aa42eee10f1f9c74e7c685f4e:-1080539124,074f2ae6962eee1013d85cb8f092c9e8:319972694,7fbea6e6fc2eee10a590263cf6ec6152:1535775065,ba3e2ea6d22eee10da7515089ad4fffd:859627464,fdb1e1e629a6ee1010a20cb1fb92956f:-1421411470,91e061a6daa6ee1009f7651e894ff91d:-1835493712,6fef51a6b8a6ee106158f5e5c74fa02f:1869045244,c6efe39e556eae10ade57b4f6e881096:-81868294,2e6f6b5e5e6eae10ec23ea85b1a2c359:768596608,3c5fa75e5d6eae10a37df927abb22bd0:-1579457599,a3092f568d6eae10b63ef02926e3cddf:535406532</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 11:02:56</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>435dce73b40c455cb073ff8947933a64</sys_id>
+        <sys_metadata>a60723d2476eae10629597da116d4391</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Q7. To update occupancy field in wad tab</sys_name>
+        <sys_package display_value="Health Management" source="5a8c1293c39a22101d9c7c2ed40131ec">5a8c1293c39a22101d9c7c2ed40131ec</sys_package>
+        <sys_parent display_value="Room">ed8e6a1fc3da22101d9c7c2ed401312b</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Health Management">5a8c1293c39a22101d9c7c2ed40131ec</sys_scope>
+        <sys_scope_delete display_value="">55baf07672d749fc861634fc62013810</sys_scope_delete>
+        <sys_update_name>sys_script_a60723d2476eae10629597da116d4391</sys_update_name>
+        <sys_update_version display_value="sys_script_a60723d2476eae10629597da116d4391">9605ba6e472eee10629597da116d438e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 11:02:56</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

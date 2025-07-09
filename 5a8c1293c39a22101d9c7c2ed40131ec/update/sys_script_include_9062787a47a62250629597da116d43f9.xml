@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>global.LabTestUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>LabTestUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var LabTestUtils = Class.create();
+LabTestUtils.prototype = {
+    initialize: function() {
+    },
+	fetchTestResultsById: function(id){
+		var _results = new GlideRecord('u_lab_test');
+		_results.addQuery('number',id);
+		_results.query();
+		if (_results.next()){
+			return "Result = " + _results.u_results;
+		}
+
+	},
+	
+	fetchTestResultsStatus: function(id){
+		var _status = new GlideRecord('u_lab_test');
+		_status.addQuery('number',id);
+		_status.query();
+		if (_status.next()){
+			return "Results are = " + _status.u_status;
+		}
+
+	},
+
+	fetchLabTestById: function(patientid){
+		var _test = new GlideRecord('u_lab_test');
+		_test.addQuery('u_patient_id',patientid);
+		_test.query();
+		while (_test.next()){
+			return _test;
+		}
+
+	},
+	
+	fetchLabTestByDate: function(dateStr){
+		var _date = new GlideRecord('u_lab_test');
+		_date.addQuery('u_scheduled_date','CONTAINS',dateStr);
+		_date.query();
+		while (_date.next()){
+			return _date;
+		}
+	},
+    type: 'LabTestUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 20:10:46</sys_created_on>
+        <sys_id>9062787a47a62250629597da116d43f9</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>LabTestUtils</sys_name>
+        <sys_package display_value="Health Management" source="5a8c1293c39a22101d9c7c2ed40131ec">5a8c1293c39a22101d9c7c2ed40131ec</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Health Management">5a8c1293c39a22101d9c7c2ed40131ec</sys_scope>
+        <sys_update_name>sys_script_include_9062787a47a62250629597da116d43f9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 20:36:07</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>9062787a47a62250629597da116d43f9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 20:10:46</sys_created_on>
+        <sys_id>527230ba47a62250629597da116d43f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 20:10:46</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

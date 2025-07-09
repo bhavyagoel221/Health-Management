@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="db9bd316472eae10629597da116d4375" label="Policy" max_length="40" name="u_policy" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Policy Type" max_length="40" name="u_policy_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Education" sequence="3" value="education"/>
+                <element inactive_on_update="false" label="Health" sequence="0" value="health"/>
+                <element inactive_on_update="false" label="Vehicle" sequence="1" value="vehicle"/>
+                <element inactive_on_update="false" label="Life" sequence="2" value="life"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Description" mandatory="true" max_length="40" name="u_description" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Policy ID" max_length="40" name="u_number" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Policy Name" mandatory="true" max_length="40" name="u_policy_name" type="string"/>
+        <element label="Coverage Amount" max_length="40" name="u_coverage_amount" type="integer"/>
+    </element>
+</database>

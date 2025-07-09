@@ -12,7 +12,7 @@
                 <element inactive_on_update="false" label="New" sequence="0" value="new"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" choice="1" label="Department" mandatory="true" max_length="40" name="u_department" type="string" use_dependent_field="true">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Department" max_length="40" name="u_department" type="string" use_dependent_field="true">
             <choice>
                 <element inactive="true" inactive_on_update="true" label="Pediatrics" sequence="2" value="pediatrics"/>
                 <element inactive="true" inactive_on_update="true" label="Cardiology" sequence="1" value="cardiology"/>

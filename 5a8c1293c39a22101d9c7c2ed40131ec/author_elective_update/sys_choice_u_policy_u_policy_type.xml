@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_policy_type" table="u_policy" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_policy_type</element>
+            <name>u_policy</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-07 19:21:54</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_policy_type</sys_name>
+            <sys_package display_value="Health Management" source="5a8c1293c39a22101d9c7c2ed40131ec">5a8c1293c39a22101d9c7c2ed40131ec</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Health Management">5a8c1293c39a22101d9c7c2ed40131ec</sys_scope>
+            <sys_update_name>sys_choice_u_policy_u_policy_type</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-07 19:21:54</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_policy_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Health</label>
+            <language>en</language>
+            <name>u_policy</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-07 19:21:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-07 19:21:54</sys_updated_on>
+            <value>health</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_policy_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Vehicle</label>
+            <language>en</language>
+            <name>u_policy</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-07 19:21:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-07 19:21:54</sys_updated_on>
+            <value>vehicle</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_policy_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Life</label>
+            <language>en</language>
+            <name>u_policy</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-07 19:21:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-07 19:21:54</sys_updated_on>
+            <value>life</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_policy_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Education</label>
+            <language>en</language>
+            <name>u_policy</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-07 19:21:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-07 19:21:54</sys_updated_on>
+            <value>education</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

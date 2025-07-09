@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>u_patient_table</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Q1 Fetch all patient detail bypatient ID</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    var _patientDetails = new PatientUtils();
+    var _patientInfo = _patientDetails.fetchPatientDetailsById('PAT0001050');
+    gs.print(_patientInfo.u_fname + " " + _patientInfo.u_lname)
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 15:46:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>06957f6e47622250629597da116d4349</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Q1 Fetch all patient detail bypatient ID</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Health Management" source="5a8c1293c39a22101d9c7c2ed40131ec">5a8c1293c39a22101d9c7c2ed40131ec</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Health Management">5a8c1293c39a22101d9c7c2ed40131ec</sys_scope>
+        <sys_update_name>sys_script_06957f6e47622250629597da116d4349</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 15:46:59</sys_updated_on>
+        <template/>
+        <when>before_display</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=06957f6e47622250629597da116d4349"/>
+    <sys_es_latest_script action="DELETE">
+        <id>06957f6e47622250629597da116d4349</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 15:46:59</sys_created_on>
+        <sys_id>121637ae47622250629597da116d43af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 15:46:59</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Health Management">5a8c1293c39a22101d9c7c2ed40131ec</application>
+        <file_path/>
+        <instance_id>13ddae8ceb246a10cbdefceacad0cd08</instance_id>
+        <instance_name>dev307142</instance_name>
+        <name>sys_script_06957f6e47622250629597da116d4349</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;u_patient_table&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Q1 Fetch all patient detail bypatient ID&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    var _patientDetails = new PatientUtils();
+    var _patientInfo = _patientDetails.fetchPatientDetailsById('PAT0001050');
+    gs.print(_patientInfo.u_fname + " " + _patientInfo.u_lname)
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-08 15:46:59&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;06957f6e47622250629597da116d4349&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Q1 Fetch all patient detail bypatient ID&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Health Management" source="5a8c1293c39a22101d9c7c2ed40131ec"&gt;5a8c1293c39a22101d9c7c2ed40131ec&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Health Management"&gt;5a8c1293c39a22101d9c7c2ed40131ec&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_06957f6e47622250629597da116d4349&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-08 15:46:59&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before_display&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=06957f6e47622250629597da116d4349"/&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;06957f6e47622250629597da116d4349&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-08 15:46:59&lt;/sys_created_on&gt;&lt;sys_id&gt;121637ae47622250629597da116d43af&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-08 15:46:59&lt;/sys_updated_on&gt;&lt;table&gt;sys_script&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>2096159063</payload_hash>
+        <record_name>Q1 Fetch all patient detail bypatient ID</record_name>
+        <reverted_from/>
+        <source>dc45376e47622250629597da116d4364</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 15:46:59</sys_created_on>
+        <sys_id>1a1677ee47622250629597da116d4301</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197eab80c9b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 15:46:59</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>1616f7ae30622250df495f592d1322bd</update_guid>
+        <update_guid_history>1616f7ae30622250df495f592d1322bd:2096159063</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-09 03:38:43</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>2c2bb2b0bd814654ab7c707383f5a0c4</sys_id>
+        <sys_metadata>06957f6e47622250629597da116d4349</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Q1 Fetch all patient detail bypatient ID</sys_name>
+        <sys_package display_value="Health Management" source="5a8c1293c39a22101d9c7c2ed40131ec">5a8c1293c39a22101d9c7c2ed40131ec</sys_package>
+        <sys_parent display_value="Patient Record">edde561bc39a22101d9c7c2ed4013122</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Health Management">5a8c1293c39a22101d9c7c2ed40131ec</sys_scope>
+        <sys_scope_delete display_value="">55baf07672d749fc861634fc62013810</sys_scope_delete>
+        <sys_update_name>sys_script_06957f6e47622250629597da116d4349</sys_update_name>
+        <sys_update_version display_value="sys_script_06957f6e47622250629597da116d4349">1a1677ee47622250629597da116d4301</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-09 03:38:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
