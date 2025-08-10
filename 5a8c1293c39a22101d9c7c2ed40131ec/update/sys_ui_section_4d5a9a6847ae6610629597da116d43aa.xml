@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Contact Information" section_id="4d5a9a6847ae6610629597da116d43aa" sys_domain="global" table="u_patient_table" version="3" view="Supervisor_View">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_uemail</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-02 03:58:13</sys_created_on>
+            <sys_id>255ada6847ae6610629597da116d43fd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Contact Information" display_value="Contact Information" name="u_patient_table" sys_domain="global" view="455a9a6847ae6610629597da116d43a5">4d5a9a6847ae6610629597da116d43aa</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-02 03:58:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_address</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-02 03:58:13</sys_created_on>
+            <sys_id>615a1e6847ae6610629597da116d430a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Contact Information" display_value="Contact Information" name="u_patient_table" sys_domain="global" view="455a9a6847ae6610629597da116d43a5">4d5a9a6847ae6610629597da116d43aa</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-02 03:58:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-02 03:58:13</sys_created_on>
+            <sys_id>e55a1e6847ae6610629597da116d430a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Contact Information" display_value="Contact Information" name="u_patient_table" sys_domain="global" view="455a9a6847ae6610629597da116d43a5">4d5a9a6847ae6610629597da116d43aa</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-02 03:58:13</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_contact_number</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-02 03:58:13</sys_created_on>
+            <sys_id>6d5a1e6847ae6610629597da116d430a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Contact Information" display_value="Contact Information" name="u_patient_table" sys_domain="global" view="455a9a6847ae6610629597da116d43a5">4d5a9a6847ae6610629597da116d43aa</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-02 03:58:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Contact Information</caption>
+            <header>false</header>
+            <name>u_patient_table</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-02 03:58:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4d5a9a6847ae6610629597da116d43aa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_patient_table</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Health Management" source="5a8c1293c39a22101d9c7c2ed40131ec">5a8c1293c39a22101d9c7c2ed40131ec</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Health Management">5a8c1293c39a22101d9c7c2ed40131ec</sys_scope>
+            <sys_update_name>sys_ui_section_4d5a9a6847ae6610629597da116d43aa</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-02 03:58:12</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Supervisor View" name="Supervisor_View">455a9a6847ae6610629597da116d43a5</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

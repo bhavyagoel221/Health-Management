@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>global.Script_include1</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>Script_include1</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var Script_include1 = Class.create();
+Script_include1.prototype = {
+    initialize: function() {
+    },
+
+    patientDetails: function(id) {
+        var patient = new GlideRecord('u_patient_table');
+        patient.addQuery('sys_id', id);
+        patient.query();
+        if (patient.next()) {
+            return patient;
+        } else {
+            return null;
+        }
+    },
+
+    type: 'Script_include1'
+};
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 11:53:33</sys_created_on>
+        <sys_id>142eb2ea476eee10629597da116d4328</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Script_include1</sys_name>
+        <sys_package display_value="Health Management" source="5a8c1293c39a22101d9c7c2ed40131ec">5a8c1293c39a22101d9c7c2ed40131ec</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Health Management">5a8c1293c39a22101d9c7c2ed40131ec</sys_scope>
+        <sys_update_name>sys_script_include_142eb2ea476eee10629597da116d4328</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 12:11:18</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="DELETE">
+        <id>142eb2ea476eee10629597da116d4328</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 11:53:32</sys_created_on>
+        <sys_id>bea0c3ae476eee10629597da116d431e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 11:53:32</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Health Management">5a8c1293c39a22101d9c7c2ed40131ec</application>
+        <file_path/>
+        <instance_id>13ddae8ceb246a10cbdefceacad0cd08</instance_id>
+        <instance_name>dev307142</instance_name>
+        <name>sys_script_include_142eb2ea476eee10629597da116d4328</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.Script_include1&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;Script_include1&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var Script_include1 = Class.create();
+Script_include1.prototype = {
+    initialize: function() {
+    },
+
+    patientDetails: function(id) {
+        var patient = new GlideRecord('u_patient_table');
+        patient.addQuery('sys_id', id);
+        patient.query();
+        if (patient.next()) {
+            return patient;
+        } else {
+            return null;
+        }
+    },
+
+    type: 'Script_include1'
+};
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-08 11:53:33&lt;/sys_created_on&gt;&lt;sys_id&gt;142eb2ea476eee10629597da116d4328&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;Script_include1&lt;/sys_name&gt;&lt;sys_package display_value="Health Management" source="5a8c1293c39a22101d9c7c2ed40131ec"&gt;5a8c1293c39a22101d9c7c2ed40131ec&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Health Management"&gt;5a8c1293c39a22101d9c7c2ed40131ec&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_142eb2ea476eee10629597da116d4328&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-08 12:11:18&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;142eb2ea476eee10629597da116d4328&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-08 11:53:32&lt;/sys_created_on&gt;&lt;sys_id&gt;bea0c3ae476eee10629597da116d431e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-08 11:53:32&lt;/sys_updated_on&gt;&lt;table&gt;sys_script_include&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-181006151</payload_hash>
+        <record_name>Script_include1</record_name>
+        <reverted_from/>
+        <source>501e999647a2ae10629597da116d43dc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 12:11:18</sys_created_on>
+        <sys_id>07b48f6247aeee10629597da116d43ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197e9f294e30000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 12:11:18</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>8bb48f6224aeee10ef43b158e11ae2e9</update_guid>
+        <update_guid_history>8bb48f6224aeee10ef43b158e11ae2e9:-181006151,8bf3c7a20caeee1093cd5bdd2571597c:1361492757,9ed38f629faeee1003d03a15cd10079a:182168004,52b3c36215aeee1003f0ce14cc714a0b:-612205946,d2838f6217aeee10dcad3fabbd456659:182168004,5f228fee1b6eee10db7586f6d3a53a78:-82701988,3aa0c3aed16eee10f58aab194dcccd2e:130071261</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 17:12:47</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>0781091d864b483f81b1a8ae7df83251</sys_id>
+        <sys_metadata>142eb2ea476eee10629597da116d4328</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Script_include1</sys_name>
+        <sys_package display_value="Health Management" source="5a8c1293c39a22101d9c7c2ed40131ec">5a8c1293c39a22101d9c7c2ed40131ec</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Health Management">5a8c1293c39a22101d9c7c2ed40131ec</sys_scope>
+        <sys_scope_delete display_value="">55baf07672d749fc861634fc62013810</sys_scope_delete>
+        <sys_update_name>sys_script_include_142eb2ea476eee10629597da116d4328</sys_update_name>
+        <sys_update_version display_value="sys_script_include_142eb2ea476eee10629597da116d4328">07b48f6247aeee10629597da116d43ea</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 17:12:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

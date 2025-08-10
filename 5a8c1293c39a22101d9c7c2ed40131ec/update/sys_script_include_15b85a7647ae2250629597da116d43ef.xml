@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>global.BR</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>BR</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var BR = Class.create();
+BR.prototype = {
+    initialize: function() {
+    },
+	setStatusToScheduled: function(){
+	if (current.u_status) {
+        current.u_status = 'Scheduled';
+        gs.addInfoMessage("Status is set to 'Scheduled'.");
+    }
+	},
+
+	sendNotificationWhenScheduled: function(){
+			if (current.u_status == 'scheduled'){
+		gs.addInfoMessage("Appointment is Scheduled");
+	}
+	},
+
+	changeStatusToComplete: function(){
+		if (current.work_notes.contains('finished')){
+		current.u_status = 'completed';
+		gs.addInfoMessage("Appointment is Finished");
+	}
+	},
+
+	setPriorityToHigh: function(){
+		if (current.u_vip == true){
+		current.u_priority = "high";
+		gs.addInfoMessage("VIP in the house")
+	}
+	},
+
+	calTotal: function(){
+		
+    	if (current.u_dosage && current.u_frequency){
+        var freq = null;
+        if (current.u_frequency == 'once_daily'){
+            freq = 1;
+        }
+        if (current.u_frequency == 'twice_daily'){
+            freq = 2;
+        }
+        if (current.u_frequency == 'thrice_daily'){
+            freq = 3;
+        }  
+        if(current.u_frequency == 'once_week'){
+                freq = 1/7;
+        }
+        var days = gs.dateDiff(current.u_start_date,current.u_end_date,true);
+        var dosage = current.u_dosage;
+		
+        var ans = freq * dosage * (days/(3600*24));
+        current.u_total_dosage = ans;
+        gs.addInfoMessage("Total Dosage is "+ ans);
+   
+    }
+	},
+
+	updateLabTest: function(){
+		
+		if(current.u_results != previous.u_results){
+		gs.addInfoMessage("Result updated..")
+	}
+	},
+	
+	updateOccupancyInWard: function(){
+		
+		var ward = new GlideRecord('u_ward_table');
+		var wardID = current.u_ward_id;
+		ward.addQuery('sys_id', wardID);
+		ward.query();
+		if(ward.next()){
+			if (ward.u_capacity > ward.u_occupancy){
+            ward.u_occupancy = ward.u_occupancy + 1;
+			gs.addInfoMessage('occupancy updated in ward table to '+ ward.u_occupancy);
+			}
+			else{
+				ward.setAbortAction(true);
+				gs.addInfoMessage("No beds Available");
+			}
+			ward.update();
+		}
+	},
+
+	updateOccupiedBeds: function(){
+		if (current.u_assigned_to && previous.u_assigned_to != current.u_assigned_to){
+		if (current.u_occupied_beds<current.u_bed_count){
+			current.u_occupied_beds += 1;
+			gs.addInfoMessage("Occupied Beds Updated");
+		}
+		else{
+			gs.addErrorMessage("No beds available in this room!");
+			current.setAbortAction(true);
+			}
+		}
+	},
+
+	notifyBilling: function(){
+		if (current.u_status == 'completed'){
+		gs.addInfoMessage("Appointment is Completed");
+	}
+	
+	},
+
+	updateCoverageDetails: function(){
+		if (current.u_policy_number != previous.u_policy_number){
+		var description = current.u_policy_number.u_description;
+		current.u_coverage_details = description;
+		gs.addInfoMessage("Coverage Details are updated.");
+	}
+	},
+    type: 'BR'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-09 03:38:09</sys_created_on>
+        <sys_id>15b85a7647ae2250629597da116d43ef</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>BR</sys_name>
+        <sys_package display_value="Health Management" source="5a8c1293c39a22101d9c7c2ed40131ec">5a8c1293c39a22101d9c7c2ed40131ec</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Health Management">5a8c1293c39a22101d9c7c2ed40131ec</sys_scope>
+        <sys_update_name>sys_script_include_15b85a7647ae2250629597da116d43ef</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-09 11:03:44</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>15b85a7647ae2250629597da116d43ef</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-09 03:38:09</sys_created_on>
+        <sys_id>bfd8523247ae2250629597da116d43e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-09 03:38:09</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

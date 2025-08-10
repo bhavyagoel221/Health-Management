@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="c9c2ea5fc39a22101d9c7c2ed4013181" extends="task" label="Medication" max_length="40" name="u_medication" type="collection">
+        <element label="Require Lab Test" max_length="40" name="u_require_lab_test" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Dosage" mandatory="true" max_length="1000" name="u_dosage" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="End Date" mandatory="true" max_length="40" name="u_end_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Patient ID" mandatory="true" max_length="32" name="u_patient_id" reference="u_patient_table" type="reference"/>
+        <element label="Total Dosage" max_length="40" name="u_total_dosage" read_only="true" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Medication Name" mandatory="true" max_length="40" name="u_medication_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Frequency" mandatory="true" max_length="40" name="u_frequency" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Once Daily" sequence="0" value="once_daily"/>
+                <element inactive_on_update="false" label="Twice Daily" sequence="1" value="twice_daily"/>
+                <element inactive_on_update="false" label="Once In a Week" sequence="3" value="once_week"/>
+                <element inactive_on_update="false" label="Thrice Daily" sequence="2" value="thrice_daily"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Test Name" max_length="32" name="u_test_name" reference="u_lab_test" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Start Date" mandatory="true" max_length="40" name="u_start_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="u_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Prescribed" sequence="1" value="prescribed"/>
+                <element inactive_on_update="false" label="In Progress" sequence="2" value="in progress"/>
+                <element inactive_on_update="false" label="Completed" sequence="3" value="completed"/>
+                <element inactive_on_update="false" label="New" sequence="0" value="new"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Prescribing Doctor" mandatory="true" max_length="32" name="u_prescribing_doctor" reference="u_doctor" type="reference"/>
+    </element>
+</database>

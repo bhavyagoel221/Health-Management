@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_email_template">
+    <sysevent_email_template action="INSERT_OR_UPDATE">
+        <collection>u_appointment</collection>
+        <email_layout/>
+        <message/>
+        <message_html><![CDATA[<p>Hi ${u_patient_id.u_fname},</p>
+<p>Your appointment is scheduled for ${u_appointment_date}.</p>
+<p>&nbsp;</p>
+<p>Thank You,</p>
+<p>Admin</p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Vip Patient Scheduled</name>
+        <sms_alternate/>
+        <subject>Appointment: ${number} Scheduled</subject>
+        <sys_class_name>sysevent_email_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-09 18:52:22</sys_created_on>
+        <sys_id>8589658b47ae6250629597da116d43cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Vip Patient Scheduled</sys_name>
+        <sys_package display_value="Health Management" source="5a8c1293c39a22101d9c7c2ed40131ec">5a8c1293c39a22101d9c7c2ed40131ec</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Health Management">5a8c1293c39a22101d9c7c2ed40131ec</sys_scope>
+        <sys_update_name>sysevent_email_template_8589658b47ae6250629597da116d43cf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-09 18:52:22</sys_updated_on>
+        <sys_version>2</sys_version>
+    </sysevent_email_template>
+</record_update>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>global.BillingUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>BillingUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var BillingUtils = Class.create();
+BillingUtils.prototype = {
+    initialize: function() {},
+
+    getTotalBillingAmount: function(id) {
+        var bill = new GlideRecord('u_billing');
+        bill.addQuery('u_patient_id', id);
+        bill.query();
+        var total = 0;
+        while (bill.next()) {
+            if (bill.u_total_amount) {
+                total += parseFloat(bill.u_total_amount);
+            }
+        }
+        return total;
+    },
+
+    isBillingOverdue: function(id) {
+        var bill = new GlideRecord('u_billing');
+        if (bill.get(id)) {
+            if (bill.u_status == 'paid') {
+                return true
+            }
+        }
+        return false;
+    },
+
+    getBillingByID: function(id) {
+        var bill = new GlideRecord('u_billing');
+        if (bill.get(id)) {
+            return bill;
+        }
+        return null;
+    },
+
+    getBillingByPatientID: function(id) {
+        var bill = new GlideRecord('u_billing');
+        bill.addQuery('u_patience_id', id);
+        bill.query();
+        return bill;
+    },
+    type: 'BillingUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-09 09:55:47</sys_created_on>
+        <sys_id>842f2f7247666250629597da116d4389</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>BillingUtils</sys_name>
+        <sys_package display_value="Health Management" source="5a8c1293c39a22101d9c7c2ed40131ec">5a8c1293c39a22101d9c7c2ed40131ec</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Health Management">5a8c1293c39a22101d9c7c2ed40131ec</sys_scope>
+        <sys_update_name>sys_script_include_842f2f7247666250629597da116d4389</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-09 10:01:37</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>842f2f7247666250629597da116d4389</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-09 09:55:47</sys_created_on>
+        <sys_id>e74f6b7247666250629597da116d43dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-09 09:55:47</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

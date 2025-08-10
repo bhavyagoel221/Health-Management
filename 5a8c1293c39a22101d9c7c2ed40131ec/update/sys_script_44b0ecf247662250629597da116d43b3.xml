@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection/>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>PatientUtils</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	var _patientDetails = new PatientUtils();
+var _patientInfo = _patientDetails.fetchAllPatientDetailsByPatientId('PAT0001046');
+gs.print(_patientInfo.u_fname + ' ' + _patientInfo.u_lname);
+ 
+var checkVip = _patientDetails.checkIfPatientIsVip('PAT0001046');
+gs.print(checkVip);
+ 
+var patientAge = _patientDetails.calculatePatientAge('PAT0001046');
+gs.print(patientAge);
+ 
+var _patinetAppt = _patientDetails.fetchPatientAppointments('0ec304b847a6a610629597da116d4372')
+if (!_patinetAppt.hasNext()) {
+  gs.print("No appointments found for patient.");
+} else {
+  while (_patinetAppt.next()) {
+	gs.print("-----Appointment-----")
+  	gs.print("Appointment Date: " + _patinetAppt.u_appointment_date);
+   	gs.print("Doctor: " + _patinetAppt.u_doctor.getDisplayValue());        
+	gs.print("Status: " + _patinetAppt.u_status);        
+	gs.print("-----");
+	}
+}
+
+var _patientMedication = _patientDetails.fetchPatientMedications('cac30c7c47a6a610629597da116d439f');
+if (!_patientMedication.hasNext()) {
+  gs.print("No medication found for patient.");
+} else {
+  while (_patientMedication.next()) {
+	gs.print("-----Medication-----")
+    gs.print("Medication Date: " + _patientMedication.u_medication_name);
+    gs.print("Dosage: " + _patientMedication.u_dosage);        
+    gs.print("frequency: " + _patientMedication.u_frequency);        
+    gs.print("-----");
+  }
+}
+
+
+var _patientLabTest = _patientDetails.fetchPatientLabTest('0ec30c7c47a6a610629597da116d43a0');
+if (!_patientLabTest.hasNext()) {
+  gs.print("No Lab Test found for patient.");
+} else {
+  while (_patientLabTest.next()) {
+	gs.print("-----LabTest-----")
+    gs.print("Scheduled Date: " + _patientLabTest.u_scheduled_date);
+    gs.print("Status: " + _patientLabTest.u_status);        
+    gs.print("Test Type: " + _patientLabTest.u_test_type);        
+    gs.print("-----");
+  }
+}
+
+var _patientBilling = _patientDetails.fetchPatientBillingRecord('0ec304b847a6a610629597da116d4372')
+if (!_patientBilling.hasNext()) {
+  gs.print("No Biiling Record found for patient.");
+} else {
+  while (_patientBilling.next()) {
+	gs.print("-----Billing-----")
+    gs.print("Total Ammount: " + _patientBilling.u_total_ammount);
+    gs.print("Status: " + _patientBilling.u_status);        
+    gs.print("Appointment ID: " + _patientBilling.u_appointment_id.getDisplayValue());        
+    gs.print("-----");
+  }
+}
+
+
+var _patientInsurance = _patientDetails.fetchPatientInsurancePolicies('0ec304b847a6a610629597da116d4372');
+if (!_patientInsurance.hasNext()) {
+  gs.print("No Insurance found for patient.");
+} else {
+  while (_patientInsurance.next()) {
+	gs.print("-----Insurance-----")
+    gs.print("Provider: " + _patientInsurance.u_provider);
+    gs.print("Status: " + _patientInsurance.u_status);        
+    gs.print("Policy Number" + _patientInsurance.u_policy_number);        
+    gs.print("-----");
+  }
+}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 18:53:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>44b0ecf247662250629597da116d43b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PatientUtils</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Health Management" source="5a8c1293c39a22101d9c7c2ed40131ec">5a8c1293c39a22101d9c7c2ed40131ec</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Health Management">5a8c1293c39a22101d9c7c2ed40131ec</sys_scope>
+        <sys_update_name>sys_script_44b0ecf247662250629597da116d43b3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 18:53:48</sys_updated_on>
+        <template/>
+        <when>before_display</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=44b0ecf247662250629597da116d43b3"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>44b0ecf247662250629597da116d43b3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 18:53:48</sys_created_on>
+        <sys_id>3ad0e47247662250629597da116d4355</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 18:53:48</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
